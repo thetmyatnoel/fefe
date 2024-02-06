@@ -165,8 +165,8 @@ body.fix {
 }
 #header #gnb .gnb__item > a {
   text-decoration: none;
-  font-size: 1.8rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 200;
   color: #fff;
   letter-spacing: 0;
   transition: font-size 0.3s ease;
