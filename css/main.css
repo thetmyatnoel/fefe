@@ -157,197 +157,81 @@ sup.point {
   line-height: 2rem;
 }
 
-#sec01 {
-  min-height: 100vh; /* Full viewport height */
-  width: 100vw; /* Full viewport width */
+/* Photo Grid Styles for sec01 */
+.photo-grid-section {
+  position: relative;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 16px;
+  margin-top: 32px;
+}
+
+.grid-photo {
+  display: block;
+  background: #f7f7f7;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
   overflow: hidden;
-  position: relative;
-  margin-top: -8.2rem;
-}
-#sec01slider {
-  min-height: 90vh;
-  overflow: hidden; 
-  position: relative;
-  padding-top: 10rem;
-  
-
 }
 
-/* Styles for sec01__con, sec01__img and other elements */
-#sec01 .sec011__wrap {
-  display: flex;
-  position: relative;
-  z-index: 0;
-}
-#sec01 .sec012__wrap {
-  display: flex;
-  position: relative;
-  z-index: 0;
-}
-#sec01 .sec013__wrap {
-  display: flex;
-  position: relative;
-  z-index: 0;
-}
-
-#sec01 .sec011__con {
-  width: 50%;
-  color: #fff;
-}
-#sec01 .sec012__con {
-  width: 50%;
-  color: #fff;
-}
-#sec01 .sec013__con {
-  width: 50%;
-  color: #fff;
-}
-#sec01 .sec011__con > span {
+.grid-photo img {
+  width: 100%;
+  height: auto;
   display: block;
-  margin-top: 5rem ;
-  font-size: 5.2rem;
-  animation: fade-in-top 1s 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  
-}
-#sec01 .sec012__con > span {
-  display: block;
-  margin-top: 5rem ;
-  font-size: 5.2rem;
-  animation: fade-in-top 1s 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  
-}
-#sec01 .sec013__con > span {
-  display: block;
-  margin-top: 5rem ;
-  font-size: 5.2rem;
-  animation: fade-in-top 1s 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  
-}
-#sec01 .sec011__con > h2 {
-  font-size: 5rem;
-  color: #090a0a;
-  animation: fade-in-top  0.6s 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  line-height: 1.3461538462;
-}
-#sec01 .sec012__con > h2 {
-  font-size: 5rem;
-  color: #090a0a;
-  animation: fade-in-top  0.6s 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  line-height: 1.3461538462;
-}
-#sec01 .sec013__con > h2 {
-  font-size: 5rem;
-  color: #090a0a;
-  animation: fade-in-top  0.6s 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  line-height: 1.3461538462;
-}
-#sec01 .sec011__con > h3 {
-  font-size: 4rem;
-  color: #090a0a;
-  animation: fade-in-top  0.8s 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  line-height: 1.3461538462;
-}
-#sec01 .sec012__con > h3 {
-  font-size: 4rem;
-  color: #090a0a;
-  animation: fade-in-top  0.8s 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  line-height: 1.3461538462;
-}
-#sec01 .sec013__con > h3 {
-  font-size: 4rem;
-  color: #090a0a;
-  animation: fade-in-top  0.8s 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  line-height: 1.3461538462;
-}
-#sec01 .sec011__con > p {
-  font-size: 1.6rem;
-  animation: fade-in-top 0.8s 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  line-height: 1.5;
-  color: #090a0a;
-}
-#sec01 .sec012__con > p {
-  font-size: 1.6rem;
-  animation: fade-in-top 0.8s 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  line-height: 1.5;
-  color: #090a0a;
+  transition: transform 0.3s ease-in-out;
 }
 
-#sec01 .sec013__con > p {
-  font-size: 1.6rem;
-  animation: fade-in-top 0.8s 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  line-height: 1.5;
-  color: #090a0a;
+.grid-photo:hover img {
+  transform: scale(1.05);
+}
+figcaption {
+  padding: 15px; 
+  color: black; /* White text color */
+  font-size: 1.5em; /* Adjust caption size as needed */
 }
 
-#sec01 .sec011__con > img {
-  margin-top: 10vh;
-  width : 15vw;
-  height : 8vh;
-  animation: fade-in-top 0.8s 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-#sec01 .sec012__con > img {
-  margin-top: 10vh;
-  width : 15vw;
-  height : 8vh;
-  animation: fade-in-top 0.8s 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-#sec01 .sec011__img {
-
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  width: 50%;
-  height: 100%;
-  animation: text-focus-in 1.2s 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  /* Your original styles for .sec01__img */
-}
-#sec01 .sec012__img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  width: 50%;
-  height: 100%;
-  animation: text-focus-in 1.2s 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  /* Your original styles for .sec01__img */
-}
-#sec01 .sec013__img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  width: 50%;
-  height: 100%;
-  animation: text-focus-in 1.2s 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  /* Your original styles for .sec01__img */
-}
-
-#sec01 .sec011__img img {
+/* Carousel Styles */
+.carousel-container {
+  display: none; /* Hide by default */
+  position: fixed; /* Position it on top of the page */
   width: 100%;
   height: 100%;
-  object-fit: contain;
-}
-#sec01 .sec012__img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-#sec01 .sec013__img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8); /* Dimmed background */
+  z-index: 10;
+  padding: 2em;
+  box-sizing: border-box;
+  
 }
 
-#sec011 .app__link1 {
-  animation: text-focus-in 1.2s 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+.carousel-container:target { /* When the container is targeted, display it */
+  display: block;
+  padding: auto;
 }
-#sec012 .app__link2 {
-  animation: text-focus-in 1.2s 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+.carousel-container img {
+  max-width: 50%; /* Ensure the image fits in the viewport */
+  max-height: 80vh;
+  margin: auto; /* Center it */
+  display: block;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add some shadow for depth */
+  position: relative; /* For positioning the close button */
 }
-#sec013 .app__link3 {
-  animation: text-focus-in 1.2s 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+.close-carousel {
+  position: absolute;
+  top: 10%;
+  right: 20px;
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 1050; /* Ensure it's above the carousel */
 }
 
 
