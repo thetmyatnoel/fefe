@@ -124,18 +124,20 @@ body.fix {
   transition: 0.34s;
 }
 #header .layout {
+  width: 70%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 #header .header__logo > a {
-  width: 30%;
+  width: 50%;
   display: block;
   position: relative;
 }
 #header .header__logo > a img {
   transition: 0.34s;
+  width: 80%;
 }
 #header .header__logo > a img.color {
   position: absolute;
@@ -165,8 +167,8 @@ body.fix {
 }
 #header #gnb .gnb__item > a {
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: 200;
+  font-size: 1.5rem;
+  font-weight: 500;
   color: #fff;
   letter-spacing: 0;
   transition: font-size 0.3s ease;

@@ -56,7 +56,18 @@
   }
   .con__box:nth-child(odd) .con__text {
     margin-left: 3rem;
+  
   }
+  .con__title {
+    font-size: 3rem;
+    
+  }
+  .con__desc {
+    font-size: 1.7rem;
+    letter-spacing: -0.05em;
+    line-height: 1.5;
+  }
+
 }
 @media (max-width: 768px) {
   .con__box {
@@ -79,10 +90,24 @@
     margin-left: 0 !important;
     margin-bottom: 10vh;
   }
+  .con__title {
+    font-size: 2rem;
+    
+  }
+  .con__desc {
+    font-size: 1.6rem;
+    color: #333;
+    letter-spacing: -0.05em;
+    line-height: 1.5;
+  }
 }
 @media (max-width: 420px) {
   .con__box .mo-none {
     display: none;
+  }
+  .con__title {
+    font-size: 3rem;
+    
   }
   
 }
@@ -767,14 +792,14 @@ sup.point {
 }
 
 #sec03 .layout {
- 
+  width: 65vw;
   flex-direction: column;
 }
 #sec03 .con__img
 {
   width: 100%;
   height: 100%;
-  padding-left: 57vw;
+  padding-left: 40vw;
 }
 
 #sec03 .con__text
@@ -817,6 +842,10 @@ sup.point {
     margin-bottom: 0px;
     padding-bottom: 0px;
   }
+  #sec03 .con__img{
+    width: 130%;
+    height: 130%;
+  }
 }
 #sec04 {
   height: 100vh; 
@@ -829,41 +858,43 @@ sup.point {
 }
 
 #sec041 {
-  height: 91vh;
+  height: 100vh;
   overflow: hidden;
-  background : linear-gradient(to bottom, #005ead 70%, transparent 50%), 
+  background : linear-gradient(to bottom, #005ead 60%, transparent 65%), 
   url("../images/main/ma_un.png") no-repeat center bottom;
 background-size: cover; /* Background color for the slider */
   position: relative;
   padding-top: 10rem;
   
-
 }
 
 /* Styles for sec01__con, sec01__img and other elements */
 #sec04 .sec041__wrap {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  position: relative;
+  width: 60vw;
+  height: auto;
+  top: 30vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
   z-index: 0;
 }
 
 #sec04 .sec041__con {
+  margin-top: 15rem;
   width: 60%;
   color: #fff;
 }
 
 #sec04 .sec041__con > h1 {
   margin-top: 10rem;
-  font-size: 4rem;
+  font-size: 3rem;
   animation: fade-in-top  0.6s 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   line-height: 1.3461538462;
 }
 
 #sec04 .sec041__con > p {
-  margin-top: 3rem;
-  font-size: 2rem;
+  margin-top: 8rem;
+  font-size: 1.8rem;
   animation: fade-in-top 0.8s 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   line-height: 1.5;
   padding-left: 5rem;
@@ -872,8 +903,9 @@ background-size: cover; /* Background color for the slider */
 
 .subimg-container img[alt="img1"]
 {
-  margin-top: 23vh;
-  width : 90%;
+  margin-top: 20vh;
+  margin-left: 10vw;
+  width : 100%;
   height : 90%;
 }
 
@@ -883,123 +915,114 @@ background-size: cover; /* Background color for the slider */
   top: 7rem;
   right: 2%;
   z-index: -1;
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: 80%;
   animation: text-focus-in 1.2s 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
  
 }
 
 #sec04 .sec041__img img {
-  padding-top: 10vh;
+  margin-top: 20rem;
+  margin-left: 40rem;
   width: 50%;
-  height: 100%;
+  height: 50%;
   object-fit: contain;
 }
 
-/* Adjustments for #sec04 similar to #sec01 */
+@media (max-width: 1024px) {
+  #sec04 .sec041__wrap {
+    width: 80vw; /* Adjust the width for smaller screens */
+    top: 30vh;
+    left: 50%;
+    transform: translate(-50%, -30%);
+  }
 
-@media (max-width: 880px) {
-  #sec04 {
-    min-height: 100vh;
-    padding: 3vh 0 5vh;
-    text-align: center;
+  #sec04 .sec041__con, #sec04 .sec041__img {
+    margin-top: 10rem; /* Adjust the margin-top for smaller screens */
   }
-  #sec04 .sec041__img, #sec04 .sec042__img, #sec04 .sec043__img {
-    margin-top: 3vh;
-    width: 50vw;
-    height: 50vh;
-  }
-  #sec04 .sec041__con, #sec04 .sec042__con, #sec04 .sec043__con {
-    margin-top: -2.4rem;
-  }
-  #sec04 .sec041__con > h1, #sec04 .sec042__con > h1, #sec04 .sec043__con > h1 {
-    font-size: 3rem; /* Adjusted font size */
-  }
-  #sec04 .sec041__con > p, #sec04 .sec042__con > p, #sec04 .sec043__con > p {
-    font-size: 2rem; /* Adjusted font size */
-    padding-left: 0; /* Adjusted padding */
-  }
-  #sec04 .sec041__img img, #sec04 .sec042__img img, #sec04 .sec043__img img {
-    width: 7vw;
-    height: 5vh;
+
+  #sec04 .sec041__img img {
+    margin-top: 10rem;
+    margin-left: 35rem; /* Adjust margin-left for smaller screens */
+    width: 40%; /* Adjust the width for smaller screens */
+    height: 40%; /* Adjust the height for smaller screens */
   }
 }
 
-@media (max-width: 420px) {
-  #sec04 {
-    position: relative;
-    min-height: 50vh;
-    padding-top: 10vh; /* Adjusted padding for smaller screens */
-  }
-  #sec04slider {
-    min-height: 50vh;
-    overflow: hidden;
-    background : linear-gradient(to bottom, #005ead 80%, transparent 50%), 
-    url("../images/main/ma_un.png") no-repeat center bottom;
-  background-size: cover; /* Background color for the slider */
-    position: relative;
-    padding-top: 5vh;
-    
-  
+@media (max-width: 768px) {
+  #sec04 .sec041__wrap {
+    width: 90vw; /* Further increase width for even smaller screens */
   }
 
-  #sec04 .sec041__wrap, 
-  #sec04 .sec042__wrap, 
-  #sec04 .sec043__wrap {
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center the content horizontally */
+
+  #sec04 .sec041__con > h1 {
+    font-size: 2.5rem; /* Decrease font size */
   }
 
-  #sec04 .sec041__img, 
-  #sec04 .sec043__img {
-    position: relative; /* Use relative positioning */
-    top: auto;
-    right: auto;
-    width: 100vw; /* Full width of the viewport */
-    height: auto; /* Height is automatic based on content */
-    margin-top: 0vh; /* Reduced top margin */
-    margin-left: -10vw;
+  #sec04 .sec041__con > p {
+    font-size: 1.5rem; /* Decrease font size */
   }
+}
 
-  #sec04 .sec041__img img,  
-  #sec04 .sec043__img img {
-    width: 50vw; /* Image width as 80% of viewport width */
-    height: 50vh; /* Automatic height to maintain aspect ratio */
-    object-fit: contain; /* Ensure the image is not stretched */
-    padding-top: 0vh;
+@media (max-width: 480px) {
+  #sec04 .sec041__wrap {
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    width: 100%; /* Adjust the width to take full width */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for center alignment */
+    height: auto; /* Adjust height as needed */
   }
-
-  #sec04 .sec041__con, 
-  #sec04 .sec042__con, 
-  #sec04 .sec043__con {
-    width: 100vw; /* Content width */
-    margin-left: -10vw;
-  }
-
-  #sec04 .sec041__con > h1, 
-  #sec04 .sec042__con > h1, 
-  #sec04 .sec043__con > h1 {
-    font-size: 3.5rem; /* Adjust font size */
-  }
-
-  #sec04 .sec041__con > p, 
-  #sec04 .sec042__con > p, 
-  #sec04 .sec043__con > p {
-    font-size: 2rem; /* Adjust paragraph font size */
-  }
-
-  
-  #sec04 .subimg-container img
+  #sec04 .sec041__con
   {
-    margin-top: 5vh;
-    width : 100%;
-    height : 50%;
+    width: 70vw;
+    align-items: center;
+    padding-top: 30vh;
+    height: auto;
+    padding-left: 4vw;
   }
+
+
+  #sec04 .sec041__img {
+    left: 35vw;
+    width: 60vw; /* Elements take full width */
+    align-items: center; /* Center text if applicable */
+    padding-top: 30vh;
+  }
+
+   
+
+  #sec04 .sec041__img img {
+    width: 60%; /* Adjust image width */
+    height: auto;
+    margin-top: 45vh;
+    margin-left: auto;
+  }
+  .subimg-container
+  {
+    height: 30vh;
+  }
+  .subimg-container img[alt="img1"]
+{
+  padding-top: 18vh;
+  margin-left: 0;
+  width : 100%;
+  height : auto;
+}
+#sec04 .sec041__con > p {
+  margin-top: 10rem;
+  font-size: 1.8rem;
+  animation: fade-in-top 0.8s 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  line-height: 1.5;
+  padding-left: 5rem;
+  color: #090a0a;
 }
 
-/* Additional Styles */
-/* You can add more styles here as needed, such as for buttons and links */
-
+  /* Additional adjustments for other child elements if needed */
+}
 #sec05 {
   min-height: 100vh; /* Full viewport height */
   width: 100vw; /* Full viewport width */
@@ -1013,6 +1036,18 @@ background-size: cover; /* Background color for the slider */
   position: relative;
   
 }
+#sec051 .layout
+{
+  width: 60vw;
+}
+#sec052 .layout
+{
+  width: 60vw;
+}
+#sec053 .layout
+{
+  width: 60vw;
+}
 #sec05slider .con__title--sm{
   font-size: 1.5rem;
 }
@@ -1022,6 +1057,10 @@ background-size: cover; /* Background color for the slider */
 #sec05slider .con__desc
 {
   font-size: 1.8rem;
+}
+#sec052 .con__text
+{
+  margin-right: 10rem;
 }
 
 #sec053 .con__img img{
@@ -1041,6 +1080,87 @@ background-size: cover; /* Background color for the slider */
 #sec05slider .carousel-control-next-icon {
   filter: invert(45%) sepia(95%) saturate(1352%) hue-rotate(202deg) brightness(90%) contrast(101%);
 }
+
+
+@media (max-width: 1024px) {
+  #sec051 .layout,
+  #sec052 .layout,
+  #sec053 .layout {
+    width: 80vw; /* Increase width for smaller screens */
+  }
+
+  #sec05slider .con__title--sm {
+    font-size: 1.2rem; /* Decrease font size for smaller screens */
+  }
+
+  #sec05slider .con__title {
+    font-size: 1.8rem; /* Decrease font size for smaller screens */
+  }
+
+  #sec05slider .con__desc {
+    font-size: 1.5rem; /* Decrease font size for smaller screens */
+  }
+
+  #sec052 .con__text,
+  #sec053 .con__text {
+    margin-right: 5rem; /* Adjust margin for smaller screens */
+  }
+  #sec051 .con__img img {
+    width: 70%; 
+    margin: 0 auto;/* Adjust image size for mobile screens */
+   
+  }
+  #sec052 .con__img
+  {
+    padding-left: 10vw;
+  }
+  #sec052 .con__img img {
+    width: 95%; 
+    margin: 0 auto;
+    /* Adjust image size for mobile screens */
+  }
+  #sec053 .con__img img {
+    width: 70%; 
+    margin: 0 auto;/* Adjust image size for mobile screens */
+  }
+}
+
+@media (max-width: 480px) {
+  #sec051 .layout,
+  #sec052 .layout,
+  #sec053 .layout {
+    width: 90vw; /* Further increase width for mobile screens */
+  }
+
+  #sec05slider .con__title--sm,
+  #sec05slider .con__title,
+  #sec05slider .con__desc {
+    text-align: center; /* Center-align text for mobile readability */
+  }
+
+  #sec052 .con__text,
+  #sec053 .con__text {
+    margin-right: 0; /* Remove right margin for mobile screens */
+  }
+
+  #sec051 .con__img img {
+    width: 80%;
+    margin: 0 auto; /* Adjust image size for mobile screens */
+  }
+  #sec052 .con__img
+  {
+    padding-left: 0;
+  }
+  #sec052 .con__img img {
+    width: 80%; 
+    margin: 0 auto;/* Adjust image size for mobile screens */
+  }
+  #sec053 .con__img img {
+    width: 80%;
+    margin: 0 auto; /* Adjust image size for mobile screens */
+  }
+}
+
 #sec01slider .carousel-indicators button {
   background-color: #0082AA; /* Change to your desired color */
 }
@@ -1363,6 +1483,10 @@ background-size: cover; /* Background color for the slider */
   #sec07 .layout > div {
     width: 100%;
   }
+  #sec07 .con__title {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
   #sec07 .con__text {
     display: flex;
     justify-content: space-between;
@@ -1383,6 +1507,11 @@ background-size: cover; /* Background color for the slider */
   #sec07 .con__text::before {
     display: none;
   }
+  #sec07 .con__title {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+
 }
 @media (max-width: 620px) {
   #sec07 .con__text {
@@ -1390,6 +1519,10 @@ background-size: cover; /* Background color for the slider */
   }
   #sec07 .contact__btn-wrap {
     margin-top: 2.4rem;
+  }
+  #sec07 .con__title {
+    font-size: 3rem;
+    line-height: 1.2;
   }
 }
 @media (max-width: 420px) {
@@ -1403,6 +1536,10 @@ background-size: cover; /* Background color for the slider */
   }
   #sec07 .con__form-submit .btn-style {
     margin-top: 4rem;
+  }
+  #sec07 .con__title {
+    font-size: 3rem;
+    line-height: 1.2;
   }
 }
 .popup__wrap {
