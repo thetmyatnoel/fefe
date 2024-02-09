@@ -219,7 +219,7 @@ figcaption {
   max-height: 90vh;
   margin-right: auto; 
   margin-left: auto;
-  margin-top: 20vh;
+  margin-top: 10vh;
   display: block;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add some shadow for depth */
   position: relative; /* For positioning the close button */
