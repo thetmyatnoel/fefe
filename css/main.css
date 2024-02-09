@@ -217,9 +217,7 @@ figcaption {
 .carousel-container img {
   max-width: 50%; /* Ensure the image fits in the viewport */
   max-height: 90vh;
-  margin-right: auto; 
-  margin-left: auto;
-  margin-top: 10vh;
+  margin: auto;
   display: block;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add some shadow for depth */
   position: relative; /* For positioning the close button */
