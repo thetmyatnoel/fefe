@@ -216,8 +216,10 @@ figcaption {
 
 .carousel-container img {
   max-width: 50%; /* Ensure the image fits in the viewport */
-  max-height: 80vh;
-  margin: auto; /* Center it */
+  max-height: 100vh;
+  margin-right: auto; 
+  margin-left: auto;
+  margin-top: 20vh;
   display: block;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add some shadow for depth */
   position: relative; /* For positioning the close button */
@@ -225,13 +227,13 @@ figcaption {
 
 .close-carousel {
   position: absolute;
-  top: 10%;
+  top: 10px;
   right: 20px;
   color: white;
   font-size: 2em;
   text-decoration: none;
   cursor: pointer;
-  z-index: 1050; /* Ensure it's above the carousel */
+  z-index: 1100; /* Ensure it's above the carousel */
 }
 
 
